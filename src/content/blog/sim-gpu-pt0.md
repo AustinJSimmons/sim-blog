@@ -2,7 +2,7 @@
 title: 'SIM-GPU Series: Historic Evolution of GPUs'
 description: 'The SIM-GPU series is about learning the architecture of modern GPUs from scratch. This one covers the difference between early 2000s GPUs and todays modern GPUs. From SIMD to SIMT and how they differ.' 
 pubDate: 'Jun 11 2026'
-heroImage: '../../assets/blog-placeholder-1.jpg'
+heroImage: '../../assets/GTX-580.jpg'
 ---
 
 ## From Gaming and Graphics to Parallel Powerhouses
