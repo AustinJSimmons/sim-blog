@@ -17,8 +17,8 @@ In the early 2000s universities, labs and individuals discovered that GPUs could
 be used to run complex linear algebra and matrix multiplication far faster than
 CPUs. However, you would need to use graphics primitives and essentially trick
 these pieces of hardware into doing anything other than just computing graphics.
-People did do this but it wasn't as widely adopted like it is today. That was
-until 2006 when NVIDIA released CUDA (Compute Unified Device Architecture),
+People did do this but it wasn't as widely adopted. That was until 2006 when
+NVIDIA released CUDA (Compute Unified Device Architecture),
 then all of a sudden GPUs could explicitly be used for massive parallel
 processing without the arduous task of using graphics primitives to get what
 you want. This was the major paradigm shift that lead to GPUs being seen as
@@ -31,7 +31,16 @@ driver behind future innovation of GPUs. Really it was just a matter of time and
 exposure to more fields before GPUs would radically shift in how they operate.
 
 Enter Ilya Sutskever, who alongside Geoffrey Hinton and Alex Krizhevsky decided
-at the University of Toronto to use GPUs for applications in Neural Networks and
-thus the explosion of GPUs being used in the field of AI began.
+at the University of Toronto in 2012 to use GPUs for applications in Neural
+Networks and thus the explosion of GPUs being used in the field of AI began to
+take off. We all know what happened next.
 
-...
+## Architecture Changes
+
+Now that we got the story, we must ask, what actually changed in GPU architecture?
+
+### 1994 NV1
+
+### 2000-2006
+
+### Other Noteworthy changes in architecture
