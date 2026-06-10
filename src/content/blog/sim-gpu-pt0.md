@@ -25,6 +25,13 @@ you want. This was the major paradigm shift that lead to GPUs being seen as
 more than just Graphics Processing Units.
 
 No longer tied to the graphics and video games industries as before (at least not
-as much) GPUs were now being used for far more. GPGPU or
+as much) GPUs were now being used for far more. GPGPU or general Purpose computing
+on graphics processing units, while it existed before, would soon become a primary
+driver behind future innovation of GPUs. Really it was just a matter of time and
+exposure to more fields before GPUs would radically shift in how they operate.
+
+Enter Ilya Sutskever, who alongside Geoffrey Hinton and Alex Krizhevsky decided
+at the University of Toronto to use GPUs for applications in Neural Networks and
+thus the explosion of GPUs being used in the field of AI began.
 
 ...
