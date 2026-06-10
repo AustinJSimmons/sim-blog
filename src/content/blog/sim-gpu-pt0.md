@@ -13,12 +13,18 @@ in 2D/3D graphics and video games. Hence the name *Graphics Processing Unit*.
 The Gaming and Graphics industries would drive most of the innovation in
 parallel processing until the early 2000s.
 
-First in 2006, NVIDIA released CUDA (Compute Unified Device Architecture). Before
-this using GPUs for anything other than graphics was annoying at best. You would
-need to use graphics primitives and essentially trick these pieces of hardware into
-doing anything other than just computing graphics. People did do this but it wasn't
-widely adopted like it is today. That was until CUDA, when all of a sudden GPUs
-could explicitly be used for massive parallel processing without the arduous task
-of using graphics primitives to get what you want.
+In the early 2000s universities, labs and individuals discovered that GPUs could
+be used to run complex linear algebra and matrix multiplication far faster than
+CPUs. However, you would need to use graphics primitives and essentially trick
+these pieces of hardware into doing anything other than just computing graphics.
+People did do this but it wasn't as widely adopted like it is today. That was
+until 2006 when NVIDIA released CUDA (Compute Unified Device Architecture),
+then all of a sudden GPUs could explicitly be used for massive parallel
+processing without the arduous task of using graphics primitives to get what
+you want. This was the major paradigm shift that lead to GPUs being seen as
+more than just Graphics Processing Units.
+
+No longer tied to the graphics and video games industries as before (at least not
+as much) GPUs were now being used for far more. GPGPU or
 
 ...
