@@ -35,12 +35,16 @@ at the University of Toronto in 2012 to use GPUs for applications in Neural
 Networks and thus the explosion of GPUs being used in the field of AI began to
 take off. We all know what happened next.
 
-## Architecture Changes
+## Changes
 
-Now that we got the story, we must ask, what actually changed in GPU architecture?
+So what actually changed over this period?
 
-### 1994 NV1
+To keep a long story short, GPUs started as fixed function graphic pipeline
+optimizers.. But as real-time graphics advanced, parts of this fixed function pipeline
+became programmable. This shift created a change in physical architecture in GPUs
+that prioritized more general parallel computing while still enabling optimal real-time
+graphics performance.
 
-### 2000-2006
+### Architecture Changes
 
-### Other Noteworthy changes in architecture
+What were the actual hardware changes?
