@@ -1,7 +1,7 @@
 ---
 title: 'SIM-GPU Series: Historic Evolution of GPUs'
 description: 'The SIM-GPU series is about learning the architecture of modern GPUs from scratch. This one covers the difference between early 2000s GPUs and todays modern GPUs. From SIMD to SIMT and how they differ.' 
-pubDate: 'Jun 11 2026'
+pubDate: 'Jun 12 2026'
 heroImage: '../../assets/NV1.avif'
 ---
 
@@ -39,12 +39,32 @@ take off. We all know what happened next.
 
 So what actually changed over this period?
 
-To keep a long story short, GPUs started as fixed function graphic pipeline
-optimizers.. But as real-time graphics advanced, parts of this fixed function pipeline
-became programmable. This shift created a change in physical architecture in GPUs
-that prioritized more general parallel computing while still enabling optimal real-time
-graphics performance.
+Early GPUs relied on configurable but fixed function hardware organized in a
+hardwired sequential pipeline. They had separate hardware for vertex and fragment
+shading. They had highly restricted input and output, as well as extremely limited
+communication between 'threads'. For example fragment shaders could only receive
+input as interpolated vertices/textures and could only output data directly to
+a frame buffer. Finally they focused heavily on single precision
+floating point arithmetic, which was sufficient for pixel interpolation and
+computing geometric vertices.
 
-### Architecture Changes
+Modern GPUs (we are skipping some steps) replaced the hardwired
+pipeline with a more unified architecture centered around SMs (Streaming Multiprocessors).
+SMs are multi-threaded general purpose compute cores capable of running both graphic
+shaders and 'compute' shaders without relying on the old traditional graphics pipeline.
+Remember how we said people used to have to trick GPUs into computing things
+other than graphics? Modern GPUs addressed this with the unified architecture centered
+on SMs. To support this modern GPUs needed to implement a more complex memory hierarchy.
+They include shared memory for communication between threads, as well as parallel
+L1/L2 caches and independent memory partitions for improved latency. They also
+added double precision floating arithmetic as well as standard scalar operations
+for integers and bit operations.
 
-What were the actual hardware changes?
+Now as we know, early GPUs followed a rigid sequential flow. This flow was driven
+directly by graphics APIs. Modern GPUs on the other hand implemented complex
+control systems within SMs which enable them to dynamically schedule new workloads
+for itself without CPU intervention.
+
+Finally modern GPUs have expanded their execution units to include domain
+specific hardware accelerators directly in their SMs. Think tensor cores and
+RT cores.
