@@ -5,6 +5,16 @@ pubDate: 'Jun 12 2026'
 heroImage: '../../assets/NV1.avif'
 ---
 
+## Motivation
+
+The motivation behind this article is to understand how GPU architectures evolved.
+When I started the sim-gpu project, I ran into a lot of conflicting information
+about how GPUs function. Depending on the time period, the underlying information
+may have been outdated or not applicable to modern GPU architecture.
+
+This article serves to help me sort through what is and isn't needed to simulate
+a simple version of modern GPU architectures.
+
 ## From Gaming and Graphics to Parallel Powerhouses
 
 When graphics cards first started popping up, they were a specialized piece of
@@ -33,7 +43,7 @@ exposure to more fields before GPUs would radically shift in how they operate.
 Enter Ilya Sutskever, who alongside Geoffrey Hinton and Alex Krizhevsky decided
 at the University of Toronto in 2012 to use GPUs for applications in Neural
 Networks and thus the explosion of GPUs being used in the field of AI began to
-take off. We all know what happened next.
+take off.
 
 ## Changes
 
@@ -68,3 +78,17 @@ for itself without CPU intervention.
 Finally modern GPUs have expanded their execution units to include domain
 specific hardware accelerators directly in their SMs. Think tensor cores and
 RT cores.
+
+## Takeaways
+
+- Modern GPUs are massively parallel general compute machines.
+- Modern GPUs are built to be programmable and flexible for different workloads.
+- Modern GPUs have complex control units which dynamically allocate resources
+  across warps/threads.
+- Modern GPUs contain a memory hierarchy that enables communication between threads
+  and improve latency.
+- Modern GPUs support floating point arithmetic as well as standard scalar operations.
+
+Now that I know the major differences between early and modern GPUs I should
+be able to filter through information and get to a finalized high-level
+design for sim-gpu.
