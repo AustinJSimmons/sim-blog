@@ -6,6 +6,7 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import "../styles/global.css";
+import Analytics from '@vercel/analytics/astro'
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -15,7 +16,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
-        </head>
+    <Analytics />
+  </head>
 
 	<body>
 		<Header />
